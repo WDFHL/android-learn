@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <android.support.v4.widget.NestedScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    tools:context="com.android.learn.MainActivity"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbarStyle="insideOverlay"
-        android:scrollbars="vertical"
-        tools:context="com.android.learn.MainActivity"
-        >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:showDividers="middle">
+        android:orientation="vertical"
+        android:showDividers="middle">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Android控件"
+            android:text="AppBarLayout"
             android:textAllCaps="false"
-            android:onClick="startWidgetActivity"
+            android:onClick="startAppBarLayoutActivity"
             android:textColor="@android:color/black" />
         <Button
             android:layout_width="match_parent"
@@ -36,8 +36,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Animation动画"
-            android:onClick="startAnimationActivity"
+            android:text="动画"
             android:textAllCaps="false"
 
             android:textColor="@android:color/black" />
@@ -90,6 +89,6 @@
             android:text="联网"
             android:textAllCaps="false"
             android:textColor="@android:color/black" />
-        </LinearLayout>
+    </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.NestedScrollView>
