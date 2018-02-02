@@ -17,12 +17,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".widget.WidgetActivity"/>
+
+
+        <!--android控件-->
+        <activity android:name=".widget.activity.CoordinatorLayoutActivity"/>
+        <activity android:name=".widget.activity.TabLayoutActivity"/>
         <activity android:name=".widget.activity.AppBarLayoutActivity"/>
 
 
+        <!--android动画-->
         <activity android:name=".animation.AnimationActivity"/>
         <activity android:name=".animation.ViewAnimationActivity"/>
         <activity android:name=".animation.DrawableAnimationActivity"/>
+
+
+
+        <!--联网框架-->
+        <activity android:name=".net.activity.NetWorkActivity"/>
 
     </application>
 

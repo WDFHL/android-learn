@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="ph_divider_line">#B3B1BA</color>
+    <color name="ph_text_white">#FFFFFF</color>
+    <color name="ph_text_black">#686371</color>
+    <color name="ph_text_deep_gray">#8E8B9B</color>
+    <color name="ph_text_light_gray">#B3B1BA</color>
+    <color name="ph_text_purple">#8350E9</color>
+    <color name="ph_app_bg">#FFFFFF</color>
+    <color name="ph_bg_purple">#8350E9</color>
+    <color name="ph_bg_purple_pressed">#8258D6</color>
+    <color name="ph_bg_unable">#F2F1F7</color>
+    <color name="ph_bg_transparent">#00000000</color>
 </resources>

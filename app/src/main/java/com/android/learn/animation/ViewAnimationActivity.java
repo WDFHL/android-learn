@@ -39,7 +39,7 @@ public class ViewAnimationActivity extends BaseActivity implements View.OnClickL
         initView();
         initData();
     }
-    @Override
+
     public void initView() {
 
         iv_alpha_animation = findViewById(R.id.iv_alpha_animation);
@@ -58,7 +58,7 @@ public class ViewAnimationActivity extends BaseActivity implements View.OnClickL
         btn_translate_animation.setOnClickListener(this);
     }
 
-    @Override
+
     public void initData() {
         // 确定起始状态，结束状态
         aAnima = new AlphaAnimation(1.0f, 0.0f);//从全不透明变为全透明

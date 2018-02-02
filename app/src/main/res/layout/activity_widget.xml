@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:scrollbarStyle="insideOverlay"
     android:scrollbars="vertical"
-    tools:context="com.android.learn.MainActivity"
+    tools:context="com.android.learn.widget.WidgetActivity"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,71 +24,45 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="动作条"
+            android:text="CoordinatorLayout"
+            android:textAllCaps="false"
+            android:onClick="startCoordinatorLayoutActivity"
+            android:textColor="@android:color/black" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TabLayout"
+            android:textAllCaps="false"
+            android:onClick="startTabLayoutActivity"
+            android:textColor="@android:color/black" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CardView"
             android:textAllCaps="false"
             android:textColor="@android:color/black" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="导航"
+            android:text="Toolbar"
             android:textAllCaps="false"
             android:textColor="@android:color/black" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="动画"
+            android:text="RippleDrawable"
             android:textAllCaps="false"
+            android:textColor="@android:color/black" />
 
-            android:textColor="@android:color/black" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="图片"
+            android:text="RecyclerView"
             android:textAllCaps="false"
             android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="输入"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="加载图片"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="视频"
-            android:textAllCaps="false"
 
-            android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="相机"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="字段验证"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="崩溃监控"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="联网"
-            android:textAllCaps="false"
-            android:textColor="@android:color/black" />
+
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

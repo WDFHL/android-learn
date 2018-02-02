@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.android.learn.animation.AnimationActivity;
+import com.android.learn.net.activity.NetWorkActivity;
 import com.android.learn.widget.WidgetActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +21,10 @@ public class MainActivity extends AppCompatActivity {
 }
     public  void startAnimationActivity(View view){
         startActivity(new Intent(MainActivity.this, AnimationActivity.class));
+    }
+
+
+    public void startNetWorkActivity(View view) {
+        startActivity(new Intent(MainActivity.this, NetWorkActivity.class));
     }
 }

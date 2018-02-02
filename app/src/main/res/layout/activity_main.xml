@@ -89,6 +89,7 @@
             android:layout_height="wrap_content"
             android:text="联网"
             android:textAllCaps="false"
+            android:onClick="startNetWorkActivity"
             android:textColor="@android:color/black" />
         </LinearLayout>
 

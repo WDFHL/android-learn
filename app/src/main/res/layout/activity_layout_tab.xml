@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    tools:context="com.android.learn.widget.activity.TabLayoutActivity"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <!--
+    改变选中字体的颜色      app:tabSelectedTextColor="@color/ph_text_white"
+    改变未选中字体的颜色    app:tabTextColor="#000000"
+    改变指示器下标的颜色    app:tabIndicatorColor="@color/ph_text_purple"
+    改变整个TabLayout的颜色  app:tabBackground= "@drawable/ic_launcher_background"
+    -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabIndicatorColor="@color/ph_text_purple"
+        app:tabSelectedTextColor="@color/ph_text_white"
+        app:tabTextColor="#000000"
+        app:tabBackground= "@drawable/ic_launcher_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        />
+    <!--//设置文字的外貌   app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"-->
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"
+        >
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tab1"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tab2"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tab3"/>
+
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/icon_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/scrollable_tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fixed_tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <!--Tab里内容的内边距-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/padding_tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabPadding="30dp"
+        >
+    </android.support.design.widget.TabLayout>
+    <!--设置整个TabLayout的Padding-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fill_padding_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:paddingStart="30dp"
+        app:paddingEnd="30dp"
+        android:background="@color/colorPrimary"
+        >
+    </android.support.design.widget.TabLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/width_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="100dp"
+        app:tabMinWidth="50dp"
+        android:background="@color/colorPrimary"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <!--TabLayout的外边距-->
+    <android.support.design.widget.TabLayout
+    android:id="@+id/margin_tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabContentStart="200dp"
+    android:background="@color/colorPrimary"
+
+    >
+</android.support.design.widget.TabLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabContentStart="100dp"
+        android:background="@color/colorAccent"
+
+        >
+    </android.support.design.widget.TabLayout>
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
