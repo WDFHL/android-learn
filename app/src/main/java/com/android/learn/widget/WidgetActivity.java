@@ -9,6 +9,7 @@ import com.android.learn.BaseActivity;
 import com.android.learn.MainActivity;
 import com.android.learn.R;
 import com.android.learn.widget.activity.AppBarLayoutActivity;
+import com.android.learn.widget.activity.CoordinatorLayoutActivity;
 import com.android.learn.widget.activity.TabLayoutActivity;
 
 /**
@@ -28,6 +29,7 @@ public class WidgetActivity extends BaseActivity {
 
 
     public void startCoordinatorLayoutActivity(View view) {
+        startActivity(new Intent(WidgetActivity.this, CoordinatorLayoutActivity.class));
     }
 
     public void startTabLayoutActivity(View view) {

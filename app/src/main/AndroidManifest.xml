@@ -24,6 +24,8 @@
         <activity android:name=".widget.activity.TabLayoutActivity"/>
         <activity android:name=".widget.activity.AppBarLayoutActivity"/>
 
+        <activity android:name=".widget.activity.RecyclerViewActivity"/>
+
 
         <!--android动画-->
         <activity android:name=".animation.AnimationActivity"/>
