@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:scrollbarStyle="insideOverlay"
     android:scrollbars="vertical"
-    tools:context="com.android.learn.MainActivity"
+    tools:context="com.android.learn.animation.AnimationActivity"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +29,14 @@
             android:text="DrawableAnimation"
             android:textAllCaps="false"
             android:onClick="startDrawableAnimationActivity"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PropertyAnimationActivity"
+            android:textAllCaps="false"
+            android:onClick="startPropertyAnimationActivity"
             android:textColor="@android:color/black" />
 
     </LinearLayout>

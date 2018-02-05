@@ -27,4 +27,5 @@ public class MainActivity extends BaseActivity {
     public void startNetWorkActivity(View view) {
         startActivity(new Intent(MainActivity.this, NetWorkActivity.class));
     }
+
 }

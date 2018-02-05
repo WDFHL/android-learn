@@ -54,14 +54,22 @@
             android:gravity="center"
             >
             <ImageView
+                android:id="@+id/iv_loading_drawable"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@mipmap/shuaxin1"
+                android:background="@mipmap/loading1"
                 />
             <Button
+                android:id="@+id/btn_loading_start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="button"
+                android:text="start"
+                />
+            <Button
+                android:id="@+id/btn_loading_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stop"
                 />
 
         </LinearLayout>

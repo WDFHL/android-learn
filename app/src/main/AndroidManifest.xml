@@ -31,7 +31,7 @@
         <activity android:name=".animation.AnimationActivity"/>
         <activity android:name=".animation.ViewAnimationActivity"/>
         <activity android:name=".animation.DrawableAnimationActivity"/>
-
+        <activity android:name=".animation.PropertyAnimationActivity"/>
 
 
         <!--联网框架-->

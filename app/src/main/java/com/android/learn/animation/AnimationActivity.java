@@ -26,4 +26,8 @@ public class AnimationActivity extends AppCompatActivity {
     public void startDrawableAnimationActivity(View view){
         startActivity(new Intent(AnimationActivity.this, DrawableAnimationActivity.class));
     }
+
+    public void startPropertyAnimationActivity(View view) {
+        startActivity(new Intent(AnimationActivity.this, PropertyAnimationActivity.class));
+    }
 }

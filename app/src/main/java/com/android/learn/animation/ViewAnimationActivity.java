@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
@@ -29,7 +30,9 @@ public class ViewAnimationActivity extends BaseActivity implements View.OnClickL
     private TranslateAnimation tAnima;
 
 
-
+    private ImageView iv_combination_animation;
+    private Button btn_combination_animation;
+    private AnimationSet mSet;
 
 
     @Override
@@ -52,10 +55,20 @@ public class ViewAnimationActivity extends BaseActivity implements View.OnClickL
         btn_scale_animation = findViewById(R.id.btn_scale_animation);
         btn_translate_animation = findViewById(R.id.btn_translate_animation);
 
+
+        iv_combination_animation = findViewById(R.id.iv_combination_animation);
+        btn_combination_animation = findViewById(R.id.btn_combination_animation);
+
         btn_alpha_animation.setOnClickListener(this);
         btn_rotate_animation.setOnClickListener(this);
         btn_scale_animation.setOnClickListener(this);
         btn_translate_animation.setOnClickListener(this);
+
+        btn_combination_animation.setOnClickListener(this);
+
+
+
+
     }
 
 
@@ -71,6 +84,12 @@ public class ViewAnimationActivity extends BaseActivity implements View.OnClickL
         rAnima.setDuration(2000);
         sAnima.setDuration(2000);
         tAnima.setDuration(2000);
+
+        mSet =new AnimationSet(true);
+        mSet.addAnimation(tAnima);
+        mSet.addAnimation(rAnima);
+        mSet.addAnimation(sAnima);
+        mSet.addAnimation(aAnima);
     }
 
 
@@ -92,6 +111,11 @@ public class ViewAnimationActivity extends BaseActivity implements View.OnClickL
             case R.id.btn_translate_animation:
                 iv_translate_animation.startAnimation(tAnima);
                 break;
+            case R.id.btn_combination_animation:
+                iv_combination_animation.startAnimation(mSet);
+                break;
+            default:
+                    break;
         }
     }
 }

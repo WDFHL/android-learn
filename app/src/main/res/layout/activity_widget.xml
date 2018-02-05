@@ -59,6 +59,7 @@
             android:layout_height="wrap_content"
             android:text="RecyclerView"
             android:textAllCaps="false"
+            android:onClick="startRecyclerViewActivity"
             android:textColor="@android:color/black" />
 
 
