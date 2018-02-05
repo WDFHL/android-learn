@@ -33,6 +33,12 @@
         <activity android:name=".animation.DrawableAnimationActivity"/>
         <activity android:name=".animation.PropertyAnimationActivity"/>
 
+        <!--加载图片-->
+        <activity android:name=".loadpic.LoadPicActivity"/>
+
+        <!--图片-->
+        <activity android:name=".pic.PicActivity"/>
+
 
         <!--联网框架-->
         <activity android:name=".net.activity.NetWorkActivity"/>

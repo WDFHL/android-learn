@@ -46,6 +46,7 @@
             android:layout_height="wrap_content"
             android:text="图片"
             android:textAllCaps="false"
+            android:onClick="starPicActivity"
             android:textColor="@android:color/black" />
         <Button
             android:layout_width="match_parent"
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content"
             android:text="加载图片"
             android:textAllCaps="false"
+            android:onClick="starLoadPicActivity"
             android:textColor="@android:color/black" />
         <Button
             android:layout_width="match_parent"
