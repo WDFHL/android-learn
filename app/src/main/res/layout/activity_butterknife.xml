@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:scrollbarStyle="insideOverlay"
     android:scrollbars="vertical"
-    tools:context="com.android.learn.MainActivity"
+    tools:context="com.android.learn.dependency.ButterknifeActivity"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,17 +27,17 @@
                 android:gravity="center"
                 >
                 <ImageView
-                    android:id="@+id/iv_alpha_animation"
+                    android:id="@+id/iv_one"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@mipmap/shuaxin1"
                     />
                 <Button
-                    android:id="@+id/btn_alpha_animation"
+                    android:id="@+id/btn_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
-                    android:text="AlphaAnimation（透明度动画）"
+                    android:text="Button1"
                     />
 
             </LinearLayout>
@@ -49,17 +49,17 @@
                 android:gravity="center"
                 >
                 <ImageView
-                    android:id="@+id/iv_rotate_animation"
+                    android:id="@+id/iv_two"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@mipmap/shuaxin1"
                     />
                 <Button
-                    android:id="@+id/btn_rotate_animation"
+                    android:id="@+id/btn_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
-                    android:text="RotateAnimation（旋转动画）"
+                    android:text="Button2"
                     />
 
             </LinearLayout>
@@ -71,70 +71,54 @@
                 android:gravity="center"
                 >
                 <ImageView
-                    android:id="@+id/iv_scale_animation"
+                    android:id="@+id/iv_three"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@mipmap/shuaxin1"
                     />
                 <Button
-                    android:id="@+id/btn_scale_animation"
+                    android:id="@+id/btn_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAllCaps="false"
-                    android:text="ScaleAnimation（大小伸缩动画）"
+                    android:text="Button3"
                     />
 
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/dp_50"
             android:orientation="horizontal"
             android:gravity="center"
             >
-            <LinearLayout
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:text="TextView1"
                 android:gravity="center"
-                >
-                <ImageView
-                    android:id="@+id/iv_translate_animation"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@mipmap/shuaxin1"
-                    />
-                <Button
-                    android:id="@+id/btn_translate_animation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAllCaps="false"
-                    android:text="TranslateAnimation（位移动画）"
-                    />
-
-            </LinearLayout>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            >
-            <ImageView
-                android:id="@+id/iv_combination_animation"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@mipmap/shuaxin1"
                 />
-            <Button
-                android:id="@+id/btn_combination_animation"
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CombinationAnimation（组合动画）"
+                android:text="TextView2"
+                android:gravity="center"
                 />
-
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView3"
+                android:gravity="center"
+                />
         </LinearLayout>
+
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.android.learn.animation.AnimationActivity;
+import com.android.learn.dependency.DependencyInjectionActivity;
 import com.android.learn.loadpic.LoadPicActivity;
 import com.android.learn.net.activity.NetWorkActivity;
 import com.android.learn.pic.PicActivity;
@@ -35,5 +36,9 @@ public class MainActivity extends BaseActivity {
 
     public void starLoadPicActivity(View view) {
         startActivity(new Intent(MainActivity.this, LoadPicActivity.class));
+    }
+
+    public void startDependencyInjectionActivity(View view) {
+        startActivity(new Intent(MainActivity.this, DependencyInjectionActivity.class));
     }
 }

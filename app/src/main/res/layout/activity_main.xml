@@ -93,6 +93,17 @@
             android:textAllCaps="false"
             android:onClick="startNetWorkActivity"
             android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="依赖注入"
+                android:textAllCaps="false"
+                android:onClick="startDependencyInjectionActivity"
+                android:textColor="@android:color/black" />
+
+
+
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
